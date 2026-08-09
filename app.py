@@ -495,7 +495,7 @@ if not api_key:
 # 4. Gemini 모델 초기화
 genai.configure(api_key=api_key)
 model = genai.GenerativeModel(
-    model_name="models/gemini-2.0-flash-lite", # 속도가 빠르고 무료 쿼터량이 많은 Flash 모델 사용
+    model_name="models/gemini-2.5-flash", # 속도가 빠르고 무료 쿼터량이 많은 Flash 모델 사용
     system_instruction=SYSTEM_PROMPT
 )
 
